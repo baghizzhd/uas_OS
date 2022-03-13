@@ -20,23 +20,23 @@
 
     <div id="menu-bar" class="fas fa-bars"></div>
     <div class="logo">
-        <a href="/Dashboard"><img src ="images/warehouse.png" width="50 px"></a>
+        <a href="/Dashboard"><img src ="/images/warehouse.png" width="50 px"></a>
     </div>
 
     <nav class="navbar">
-        <a href="/Dashboard">Sewa Gudang</a>
+        <a href="/">Sewa Gudang</a>
         <a href="/Riwayat"> Riwayat Penyewaan</a>
         <a href="/TentangKami">Tentang Kami</a>
-        <a href="/Hubungi">Hubungi Kami</a>
+        <a href="/Hubungi">FAQ</a>
     </nav>
 
     <div class="icons">
-        <a href="/Keranjang" class="fas fa-shopping-cart"></a>
+
         <li class="dropdown">
             <a  class="fas fa-user"></a>
             <div class="dropdown-content">
                 <a href="/Profile">Profile</a>
-                <a href="/Profile">Log Out</a>
+                <a href="/logout">Log Out</a>
             </div>
         </li>
     </div>

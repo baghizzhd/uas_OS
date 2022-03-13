@@ -19,156 +19,30 @@
 
 
 <!-- products section starts  -->
-
+<h1 class="teks-dashboard">Dashboard<h1><br>
 <section class="products" id="products">
     <div class="box-container">
-
+    @foreach ($warehouse as $tampilan)
         <div class="box">
-            <!-- {{-- <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-            </div> --}} -->
-            <a href="/DetailProduk"><img src="images/1.jpg" alt=""></a>
-            <div class="content">
-               
-                <h3>Tiny Warehouse</h3> <h4>T0001</h4>
-                <div class="price">Rp5.000.000/bulan</div>
-  
-                <a href="/Keranjang" class="btn">+Keranjang</a>
-                <a href="/Transaksi" class="btn">Beli</a>
-            </div>
-        </div>
+            <!-- <a href="/DetailProduk/{{$tampilan->UNIT_NO}}"><img src="images/1.jpg" alt=""></a> -->
 
-        <div class="box">
-            {{-- <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-            </div> --}}
-            <a href="/DetailProduk"><img src="images/2.jpg" alt=""></a>
-            <div class="content">
-                <h3>Normal Warehouses</h3>
-                <div class="price">Rp6.000.000/bulan</div>
-                <a href="/Keranjang" class="btn">+Keranjang</a>
-                <a href="/Transaksi" class="btn">Beli</a>
+
+
+            <div class="ukuran">
+            <a href="/DetailProduk2/{{$tampilan->UNIT_NO}}"><img src="images/{{$tampilan->UNIT_IMAGE}}" alt=""></a>
+</div>
+ <div class="content">
+
+                <h3>{{$tampilan->PSEWA_NAME}}</h3>
+                <h4>{{$tampilan->UNIT_NO}}</h4>
+                <div class="price">Rp{{number_format(($tampilan->PSEWA_PRICEYEAR),2,',','.')}}/Tahun</div>
+
+                <!-- <a href="/Keranjang" class="btn">+Keranjang</a> -->
+                <a href="/DetailProduk2/{{$tampilan->UNIT_NO}}" class="btn">Beli</a>
             </div>
         </div>
 
-        <div class="box">
-            {{-- <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-            </div> --}}
-            <a href="/DetailProduk"><img src="images/3.jpg" alt=""></a>
-            <div class="content">
-                <h3>Large Warehouse</h3>
-                <div class="price">Rp6.000.000/bulan</div>
-                {{-- <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div> --}}
-                <a href="/Keranjang" class="btn">+Keranjang</a>
-                <a href="/Transaksi" class="btn">Beli</a>
-            </div>
-        </div>
-
-        <div class="box">
-            {{-- <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-            </div> --}}
-            <a href="/DetailProduk"><img src="images/4.jpg" alt=""></a>
-            <div class="content">
-                <h3>X-Large Warehouse</h3>
-                <div class="price">Rp9.000.000/bulan</div>
-                {{-- <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div> --}}
-                <a href="/Keranjang" class="btn">+Keranjang</a>
-                <a href="/Transaksi" class="btn">Beli</a>
-            </div>
-        </div>
-        <div class="box">
-            {{-- <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-            </div> --}}
-            <a href="/DetailProduk"><img src="images/1.jpg" alt=""></a>
-            <div class="content">
-                <h3>Normal Warehouse</h3>
-                <div class="price">Rp6.000.000/bulan</div>
-                {{-- <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div> --}}
-                <a href="/Keranjang" class="btn">+Keranjang</a>
-                <a href="/Transaksi" class="btn">Beli</a>
-            </div>
-        </div>
-
-        <div class="box">
-            {{-- <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-            </div> --}}
-            <a href="/DetailProduk"><img src="images/2.jpg" alt=""></a>
-            <div class="content">
-                <h3>X-Large Warehouses</h3>
-                <div class="price">Rp9.000.000/bulan</div>
-                {{-- <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div> --}}
-                <a href="/Keranjang" class="btn">+Keranjang</a>
-                <a href="/Transaksi" class="btn">Beli</a>
-            </div>
-        </div>
-
-        <div class="box">
-            {{-- <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-            </div> --}}
-            <a href="/DetailProduk"><img src="images/3.jpg" alt=""></a>
-            <div class="content">
-                <h3>Large Warehouse</h3>
-                <div class="price">Rp6.000.000/bulan</div>
-                {{-- <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div> --}}
-                <a href="/Keranjang" class="btn">+Keranjang</a>
-                <a href="/Transaksi" class="btn">Beli</a>
-            </div>
-        </div>
-
-        <div class="box">
-            {{-- <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-            </div> --}}
-            <a href="/DetailProduk"><img src="images/4.jpg" alt=""></a>
-            <div class="content">
-                <h3>nike shoes</h3>
-                <div class="price">Rp5.000.000/bulan</div>
-                {{-- <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div> --}}
-                <a href="/Keranjang" class="btn">+Keranjang</a>
-                <a href="/Transaksi" class="btn">Beli</a>
-            </div>
-        </div>
+     @endforeach
     </div>
 
 </section>

@@ -4302,7 +4302,8 @@ input[type="button"].btn-block {
 .alert-danger {
   color: #721c24;
   background-color: #f8d7da;
-  border-color: #f5c6cb; }
+  border-color: #f5c6cb;
+ }
   .alert-danger hr {
     border-top-color: #f1b0b7; }
   .alert-danger .alert-link {
@@ -8181,7 +8182,7 @@ h1, h2, h3, h4, h5,
   background: #e3b04b !important; }
 
 .ftco-section {
-  padding: 7em 0; }
+  padding: 2em 0; }
 
 .ftco-no-pt {
   padding-top: 0; }

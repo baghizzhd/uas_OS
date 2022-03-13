@@ -7,7 +7,7 @@ body{
 .box{
     box-sizing: border-box;
     width: 600px;
-    height: 550px;
+    height: 450px;
     border: 2px solid wheat;
     box-shadow: -3px -3px 7px black, 3px 3px 5px rgba(94, 104, 121, 0, 288);
     border-radius: 5%;
@@ -15,17 +15,9 @@ body{
     margin-top: 85px;
     overflow: hidden;
 }
-.img{
-    box-sizing: border-box;
-    width: 149px;
-    height: 149px;
-    border-radius: 50%;
-    margin: 0;
-    border: 5px solid silver;
-    padding: 3px;
-    background-color: white;
-    margin-top: 30px
-}
+
+input[type="password"],
+input[type="tel"],
 input[type="text"],
 input[type="email"]{
     display: block;
@@ -42,15 +34,16 @@ input[type="email"]{
     font-weight: 600;
     font-size: 15px;
     transition: 0.2s ease;
-
 }
+
+input[type="password"]:focus,
+input[type="tel"]:focus,
 input[type="text"]:focus,
 input[type="email"]:focus{
     border-bottom: 2px solid wheat;
     border-bottom-right-radius:20px ;
     color: black;
     transition: 0.2s ease;
-
 }
 button{
     border: 1px solid wheat;
@@ -83,3 +76,16 @@ label:hover{
     color: wheat;
 }
 
+.tulisan{
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.teks-profil{
+    margin-top: 85px;
+    margin-bottom: -70px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}

@@ -16,6 +16,12 @@
 	</head>
 	<body>
 	<section class="ftco-section">
+        @if (Session::has('error'))
+            <div class="alert alert-danger alert-block">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <strong>{{ Session::get('error') }}</strong>
+            </div>
+        @endif
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-12 col-lg-10">
@@ -27,14 +33,14 @@
 			      		<div class="w-100">
 			      			<h3 class="mb-4" style="font-size: 24px">Selamat Datang</h3>
 			      		</div>
-								<div class="w-100">
+								{{-- <div class="w-100">
 									<p class="social-media d-flex justify-content-end">
-										<a href="#" class="social-icon d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a>
-										<a href="#" class="social-icon d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a>
+										<a href="https://www.facebook.com/" class="social-icon d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a>
+										<a href="https://www.twitter.com/" class="social-icon d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a>
 									</p>
-								</div>
+								</div> --}}
 			      	</div>
-					<form method="post" action="/login2" class="signin-form">
+					<form method="post" action="/loginselesai" class="signin-form">
 					@csrf
 						<div class="form-group mb-3">
 			      			<label class="label" for="name">Alamat Email</label>
@@ -47,14 +53,14 @@
 		            <div class="form-group">
                         {{-- ada ubah disini --}}
                         <input type="submit" class="form-control2 btn btn-outline-primary rounded submit px-3" role="button" value="Masuk"/>
-		            	<!-- {{-- <button type="submit" class="form-control2 btn btn-outline-primary rounded submit px-3">Masuk</button> --}} -->
+
 		            </div>
 					</form>
-		            <div class="form-group d-md-flex">
+		            {{-- <div class="form-group d-md-flex">
 		            	<div class="w-100 text-md-right ini-lupa">
                             <a href="/LupaPass">Lupa Kata Sandi</a>
                         </div>
-		            </div>
+		            </div> --}}
 
 		          <p class="text-center">Belum memiliki akun?<span><a href="/Daftar"> Daftar</a></span> </p>
 		        </div>
@@ -63,12 +69,7 @@
 			</div>
 		</div>
 	</section>
-	@if (Session::has('error'))
-            <div class="alert alert-danger alert-block">
-                <button type="button" class="close" data-dismiss="alert">×</button> 
-                <strong>{{ Session::get('error') }}</strong>
-            </div>
-        @endif
+
 
 
 	<script src="js/jquery.min.js"></script>

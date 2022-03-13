@@ -22,12 +22,16 @@
     display: flex;
 }
 .preview img{
-    height: 55%;
+
     transform: translate(150px, 130px);
     border-radius: 5%;
+    width:463px;
+    height:287px;
+    margin-top: -15px;
 }
 p{
     margin-bottom: 10px;
+    font-size: 16pt;
 }
 h2{
     font-weight: bold;

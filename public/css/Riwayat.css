@@ -28,7 +28,7 @@
     /* background-color: #FFBA53; */
 }
 
-.dropdown{
+/* .dropdown{
     border-radius: 5px;
     border: 1.5px solid black;
 }
@@ -36,7 +36,7 @@
 .dropdown:hover{
     background-color: white;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
+} */
 
 .ini-buttons{
     text-align: center;
